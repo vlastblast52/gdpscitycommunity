@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.transparent-box {
+  background-color: rgba(255, 0, 0, 0.5); /* Красный фон, 50% прозрачности */
+  /* Или для картинки: */
+  /* background-image: url('your-image.jpg'); */
+  /* background-color: rgba(255, 0, 0, 0.5); */
+}
 
 body {
     font-family: 'Poppins', sans-serif;
