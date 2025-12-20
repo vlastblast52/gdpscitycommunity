@@ -81,7 +81,7 @@ class CustomNavbar extends HTMLElement {
       </style>
       
       <nav>
-        <a href="index.html" class="logo">GDPS City</a>
+        <a href="index.html" class="logo">City GDPS Community</a>
         
         <div class="nav-links">
           <a href="demons.html" class="nav-link">Demons</a>
@@ -89,7 +89,7 @@ class CustomNavbar extends HTMLElement {
           <!--a href="platformers.html" class="nav-link">Platformers</a>
           <a href="challenges.html" class="nav-link">Challenges</a>
           <a href="silent.html" class="nav-link">Silents</a>
-          <a href="impossible.html" class="nav-link">Impossibless</a-->
+          <a href="impossible.html" class="nav-link">Impossibles</a-->
         </div>
         
         <button class="mobile-menu-btn">
