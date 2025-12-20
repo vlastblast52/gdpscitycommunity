@@ -1,4 +1,3 @@
-//absolute top-2 right-2 #ba0100 px-2 py-1 rounded text-sm font-bold
 class CustomFooter extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: 'open' });
@@ -6,8 +5,8 @@ class CustomFooter extends HTMLElement {
       <style>
         :host {
           display: block;
-          background-color: rgba(0,0,0,0);
-          color: rgba(0,0,0,1);
+          background-color: #111827;
+          color: #9ca3af;
           padding: 3rem 1rem;
           margin-top: 4rem;
         }
@@ -34,7 +33,7 @@ class CustomFooter extends HTMLElement {
           left: 0;
           width: 40px;
           height: 3px;
-          background: linear-gradient(to bottom, #cb9fba, #4a4595);
+          background: linear-gradient(to right, #8b5cf6, #ec4899);
         }
         
         .footer-links {
@@ -44,7 +43,7 @@ class CustomFooter extends HTMLElement {
         }
         
         .footer-link {
-          color: rgba(0,0,0,1);
+          color: #9ca3af;
           transition: color 0.2s, transform 0.2s;
         }
         
@@ -59,22 +58,6 @@ class CustomFooter extends HTMLElement {
           margin-top: 1rem;
         }
         
-        .social-link {
-          width: 36px;
-          height: 36px;
-          border-radius: 50%;
-          background-color: #1f2937;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.2s;
-        }
-        
-        .social-link:hover {
-          background: linear-gradient(to right, #8b5cf6, #ec4899);
-          transform: translateY(-3px);
-        }
-        
         .copyright {
           text-align: center;
           margin-top: 3rem;
@@ -87,51 +70,88 @@ class CustomFooter extends HTMLElement {
             grid-template-columns: 1fr;
           }
         }
+        .social-button {
+        width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background-color: #1f2937;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.2s;
+
+          /*display: inline-flex;
+          align-items: center; 
+          padding: 10px 20px;
+          background-color: #1f2937 #5865F2;  Фирменный цвет Discord
+          color: #ffffff;
+          text-decoration: none;
+          border-radius: 8px;
+          font-family: sans-serif;
+          font-weight: bold;
+          font-size: 16px;
+          transition: background-color 0.3s ease;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+  .social-button:hover {
+    background-color: #00554c;
+    transform: translateY(-3px);
+}
+
+  .social-icon {
+    width: 20px; /* Размер иконки */
+    height: 20px;
+}
       </style>
+      
       <div class="footer-content">
         <div class="footer-section">
-          <h3>GDPS City</h3>
-          <p>The site for Geometry Dash private server challenges and records.</p>
+          <h3>City GDPS Community</h3>
+          <p>Сайт достижений сообщества City GDPS</p>
           <div class="social-links">
-            <a href="https://telegram.org" class="social-link">
-              <i data-feather="send"></i>
+            <a href="#" class="social-link">
+              <i data-feather="youtube"></i>
             </a>
-            <a href="https://twitter.com" class="social-link">
+            <a href="#" class="social-link">
               <i data-feather="twitter"></i>
             </a>
-            <a href="https://discord.com" class="social-link">
+            <a href="#" class="social-link">
               <i data-feather="discord"></i>
+            </a>
+            <a href="https://www.tiktok.com/@citygdps1" class="social-button" target="_blank">
+              <img src="images/tticon.svg" alt="TikTok" class="social-icon">
+            </a>
+            <a href="https://t.me/CityGDPS" class="social-button" target="_blank">
+              <img src="images/tgicon.svg" alt="Telegram" class="social-icon">
             </a>
           </div>
         </div>
         
         <div class="footer-section">
-          <h3>Categories</h3>
+          <h3>Категории</h3>
           <div class="footer-links">
-            <a href="demons.html" class="footer-link">Demons</a>
-            <a href="players.html" class="footer-link">Players</a>
-            <!--a href="platformers.html" class="footer-link">Platformers</a>
-            <a href="challenges.html" class="footer-link">Challenges</a>
-            <a href="silent.html" class="footer-link">Silents</a>
-            <a href="impossible.html" class="footer-link">Impossibles</a-->
+            <a href="demons.html" class="footer-link">Топ демонов</a>
+            <a href="players.html" class="footer-link">Топ игроков</a>
           </div>
         </div>
         
         <div class="footer-section">
-          <h3>Resources</h3>
+          <h3>Ресурсы</h3>
           <div class="footer-links">
-            <a href="#" class="footer-link">GDPS Website</a>
-            <a href="#" class="footer-link">Leaderboards</a>
-            <a href="#" class="footer-link">Submission Form</a>
-            <a href="#" class="footer-link">Community Discord</a>
+            <a href="https://citygdps.online" class="footer-link">Вебсайт GDPS</a>
+            <!--a href="players.html" class="footer-link">Таблица лидеров</a-->
+            <a href="https://t.me/citygdpsnews" class="footer-link">Новостной канал сервера</a>
+            <a href="https://t.me/CityGDPS" class="footer-link">Тг-чат сообщества</a>
           </div>
         </div>
       </div>
       
       <div class="copyright">
-        &copy; ${new Date().getFullYear()} GDPS City Level Lists. Not affiliated with Geometry Dash.
+        &copy; ${new Date().getFullYear()} City GDPS Community. Не имеет отношения к Geometry Dash. Права не защищены, но кто возьмёт сайт - тот крайне плохой человек!
       </div>
     `;
   }
 }
+
 customElements.define('custom-footer', CustomFooter);
