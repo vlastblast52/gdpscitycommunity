@@ -120,10 +120,10 @@ class CustomFooter extends HTMLElement {
               <i data-feather="discord"></i>
             </a>
             <a href="https://www.tiktok.com/@citygdps1" class="social-button" target="_blank">
-              <img src="images/tticon.svg" alt="TikTok" class="social-icon">
+              <img src="https://vlastblast52.github.io/gdpscitycommunity/images/tticon.svg" alt="TikTok" class="social-icon">
             </a>
             <a href="https://t.me/CityGDPS" class="social-button" target="_blank">
-              <img src="images/tgicon.svg" alt="Telegram" class="social-icon">
+              <img src="https://vlastblast52.github.io/gdpscitycommunity/images/tgicon.svg" alt="Telegram" class="social-icon">
             </a>
           </div>
         </div>
