@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://vlastblast52.github.io/gdpscitycommunity/images/AquaticLights.jpg');
+    background-size: cover;
+}
+
+.content {
+  position: relative; /* Чтобы позиционировать псевдоэлемент */
+  padding: 20px;
+}
+.wrapper {
+  display: flex;
+}
+.block {
+  display: inline-block;
+  border: 5px solid white;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Белый фон, 70% прозрачности */
+  z-index: -1; /* Помещаем слой под контент */
+}
+
+.category-card {
+    border-radius: 5px;
+    /*@apply rounded-lg p-8 text-center transition-all duration-300 transform hover:-translate-y-2 shadow-lg;*/
+}
+.category-card h3 {
+    padding-left: 5px
+}
+
+.category-card p {
+    padding-left: 5px;
+    padding-bottom: 5px
+    /*@apply text-gray-300;*/
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4f46e5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4f46e5;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6366f1;
+}
+
+/* Animation for cards */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.bg-gray-800 {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #222222;
+    --text-color: #ffffff;
+  }
+}
+/* Delay animations for grid items */
+.bg-gray-800:nth-child(1) { animation-delay: 0.1s; }
+.bg-gray-800:nth-child(2) { animation-delay: 0.2s; }
+.bg-gray-800:nth-child(3) { animation-delay: 0.3s; }
+.bg-gray-800:nth-child(4) { animation-delay: 0.4s; }
+.bg-gray-800:nth-child(5) { animation-delay: 0.5s; }
+.bg-gray-800:nth-child(6) { animation-delay: 0.6s; }
